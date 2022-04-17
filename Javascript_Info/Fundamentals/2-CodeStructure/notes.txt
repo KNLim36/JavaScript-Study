@@ -1,0 +1,15 @@
+JavaScript takes line breaks as implicit semicolons. (Automatic semicolon insertion)
+
+There are exceptions to this rule, like:
+
+alert(3 +
+1
++ 2);
+
+alert("Hello")
+[1, 2].forEach(alert);
+
+One-line comments //
+Multi-line comments /* */
+
+Nested comments are not supported. There may not be /*...*/ inside another /*...*/.

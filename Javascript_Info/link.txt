@@ -1,0 +1,3 @@
+https://javascript.info/
+http://caniuse.com
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

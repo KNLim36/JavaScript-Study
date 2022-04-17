@@ -1,0 +1,11 @@
+Old HTML standard like HTML4 requires a script to have a type, hence we see
+
+<script type="text/javascript" language="javascript"> 
+//...
+</script>
+
+src="script.js" and src="./script.js" both mean script.js in the current folder.
+
+Browser keep downloaded scripts in a cache to reduce traffic and load faster.
+
+If src is set, script content is ignored.

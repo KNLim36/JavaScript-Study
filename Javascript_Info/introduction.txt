@@ -1,0 +1,43 @@
+The specification of JavaScript is called ECMAScript.
+JavaScript can run on any device with JavaScript engines.
+
+Common JavaScript engines are:
+- V8 (Chrome, Opera, Edge)
+- SpiderMonkey (Firefox)
+- Nitro (Safari)
+- Chakra (Internet Explorer)
+
+*More can be found at https://en.wikipedia.org/wiki/Category:JavaScript_engines
+
+Some JavaScript engines are getting WebAssembly support.
+
+Older JavaScript engines used interpretations, 
+newer ones use just-in-time compilation for improved performance.
+
+What is just-in-time (JIT) compilation?
+- Also called dynamic translation or run-time compilation.
+- A way to execute computer code that involves compilation during execution (run time)
+- Normally translates the source code and Bytecode into machine code.
+
+A system that implements a JIT compiler typically continuously analyses the code
+being executed during run time and identifies parts of the code where the speedup
+gained from compilation or recompilation would outweigh the overhead of compiling
+that code.
+
+JavaScript can't do below things for security reasons:
+- Low-level access to memory or CPU.
+- Read/Write/Copy arbitrary files. (Node.js can do it at server side.)
+- Execute programs.
+- Access information between different tabs. (Same Origin Policy)
+
+Other languages are invented to allow conversions into JavaScript
+- CoffeeScript (Simplified JavaScript that is very similar to Ruby)
+- TypeScript (Stricter type checking, used in Angular)
+- Flow (Alternative type checking that spots error, community is unfortunately small)
+- Dart (Was intended to be an alternative to JavaScript with its own VM)
+- Brython (Allows Python 3 to be run in the browser)
+- Kotlin (Static-typed multi-paradigm language that tries to be the better Java)
+
+Dart was about to be abandoned until it is adopted by Flutter.
+Kotlin can interoperate with Java directly, boosting adoption.
+Kotlin can also compile into JavaScript.
