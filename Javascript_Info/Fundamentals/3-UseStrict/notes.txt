@@ -1,0 +1,10 @@
+When 2009 came around and ECMAScript 5 (ES5) appeared, there was a need to modify
+old JavaScript functionalities, and that results in breaking old implementations.
+
+The "use strict" keyword is then introduced to work "modernly".
+
+"use strict" when declared late in the script only applies to the code below it.
+
+There is no way to cancel "use strict".
+
+Modern JavaScript features like "class" and "module" enable "use strict" directly.
