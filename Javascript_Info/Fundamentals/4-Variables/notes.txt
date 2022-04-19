@@ -21,5 +21,125 @@ Reserved words are not allowed to be used as variable names:
 
 In older JavaScript it is possible to assign to an uninitialized variable like so:
 
-num = 5; // Assignment is successful 
+num = 5; // Assignment is successful, even though it was not declared before. 
 alert(num); // 5
+
+To declare a constant value that doesn't allow assignment, use const keyword.
+
+There is a widespread practice to use uppercase constants.
+    const COLOR_RED = "#F00";
+    const COLOR_GREEN = "#0F0";
+    const COLOR_BLUE = "#00F";
+    const COLOR_ORANGE = "#FF7F00";
+
+var is generally not used anymore, but it exists in older scripts.
+var declares variables that are either global-scoped or function-scoped.
+
+    if (true) {
+    var test = true; // use "var" instead of "let"
+    }
+
+    alert(test); // true, the variable lives after if
+
+    function sayHi() {
+    if (true) {
+        var phrase = "Hello";
+    }
+
+    alert(phrase); // works
+    }
+
+    sayHi();
+    alert(phrase); // ReferenceError: phrase is not defined
+
+var tolerates re-declarations.
+
+    let user;
+    let user; // SyntaxError: 'user' has already been declared
+
+    var user = "Pete";
+    var user = "John"; // this "var" does nothing (already declared)
+    // ...it doesn't trigger an error
+    alert(user); // John
+
+var can be declared after it is used.
+
+    function sayHi() {
+    phrase = "Hello";
+
+    alert(phrase);
+
+    var phrase;
+    }
+    sayHi();
+
+Why is that the case? It is hoisted up to the beginning of the function. 
+
+What happens in the following code?
+
+    function sayHi() {
+    phrase = "Hello"; // (*)
+
+    if (false) {
+        var phrase;
+    }
+
+    alert(phrase);
+    }
+    sayHi();
+
+There is no error. Even though if (false) never executes, var is processed
+and hoisted to the beginning of the function so it is technically alive at (*).
+
+var declarations are hoisted, but not assignments.
+
+IIFE (Immediately-Invoked Function Expressions) was created to imitate block-level
+visibility. It looks like this:
+
+    (function() {
+
+    var message = "Hello";
+
+    alert(message); // Hello
+
+    })();
+
+The function expression is created and immediately called with (). So now
+the code has its own private variables.
+
+It is wrapped with parentheses because when the JavaScript engine encounters
+the function keyword with no parentheses, the engine considers it a function 
+declaration which requires a name, without it an error will occur.
+
+    // Tries to declare and immediately call a function
+    function() { // <-- SyntaxError: Function statements require a function name
+
+    var message = "Hello";
+
+    alert(message); // Hello
+
+    }();
+
+If we try to add a name to the function, it still won't work.
+
+    // syntax error because of parentheses below
+    function go() {
+
+    }(); // <-- can't call function declaration immediately
+
+The parentheses tricks the JavaScript engine into thinking that the function is
+created in the context of another expression. (As if some function invoked () )
+
+There are a few ways to declare an IIFE.
+- Parentheses around the function
+- Parentheses around function and its invocation
+- Bitwise NOT operator starts the expression
+- Unary plus starts the expression
+
+Variable names should be:
+- Human readable
+- Descriptive
+- Concise
+- Not abbreviated
+- Not unnecessarily short
+- Uniform across team members

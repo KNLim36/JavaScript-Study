@@ -1,0 +1,19 @@
+Number
+- Represents both integers and floating point numbers.
+- Number is 64 bit.
+- Allows operations like:
+    - Multiplication (*)
+    - Division (/)
+    - Addition (+)
+    - Subtraction (-)
+    - Modulus (%)
+- Special numeric values are available in JavaScript too, like:
+    - Infinity
+    - -Infinity
+    - NaN
+
+NaN happens when a computational error happens.
+Further operations on NaN keep producing more NaNs.
+
+Nan ** 0 is 1
+

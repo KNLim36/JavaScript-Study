@@ -1,0 +1,14 @@
+JavaScript is a dynamically typed language, and allows wacky things like:
+    // no error
+    let message = "hello";
+    message = 123456;
+
+There are 8 basic types in JavaScript
+- Number
+- BigInt
+- String
+- Boolean
+- "null"
+- "undefined"
+- Object
+- Symbol
