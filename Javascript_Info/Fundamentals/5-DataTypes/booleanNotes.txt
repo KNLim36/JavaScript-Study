@@ -1,0 +1,1 @@
+Boolean is the representation of true and false in programming.

@@ -1,0 +1,11 @@
+The "object" type is special.
+
+Other types are considered primitives because they don't
+contain other values within themselves.
+
+Object is the exception to this rule.
+
+It contains collections of data and entities.
+
+The "symbol" type is used to create unique identifiers
+for objects.

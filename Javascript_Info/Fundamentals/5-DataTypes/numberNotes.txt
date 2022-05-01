@@ -17,3 +17,8 @@ Further operations on NaN keep producing more NaNs.
 
 Nan ** 0 is 1
 
+BigInt
+- Represent values bigger than 2^53 or smaller than -2^53
+- Declared by appending "n" to the end of an integer
+
+const bigInt = 1234214671824612784627814684n;

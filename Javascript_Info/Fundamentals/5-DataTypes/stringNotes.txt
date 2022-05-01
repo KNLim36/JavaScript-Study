@@ -1,0 +1,17 @@
+3 types of quotes in JavaScript:
+- Single quotes
+- Double quotes
+- Backticks
+
+Backticks provided extended functionalities by enabling variables
+inside a string.
+
+let name = "John";
+
+// embed a variable
+alert( `Hello, ${name}!` ); // Hello, John!
+
+// embed an expression
+alert( `the result is ${1 + 2}` ); // the result is 3
+
+There is no character type in JavaScript.

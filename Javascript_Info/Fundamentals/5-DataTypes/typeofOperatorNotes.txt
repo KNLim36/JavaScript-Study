@@ -1,0 +1,27 @@
+The "typeof" operator is used to determine the type of an entity.
+
+typeof undefined // "undefined"
+typeof 0 // "number"
+typeof 10n // "bigint"
+typeof true // "boolean"
+typeof "foo" // "string"
+typeof Symbol("id") // "symbol"
+typeof Math // "object"  (1)
+typeof null // "object"  (2)
+typeof alert // "function"  (3)
+
+Why typeof null is object?
+- It is an officially recognized error in JavaScript.
+- It is not kept for compatibility reasons because
+a lot of old sites use it.
+
+Even though functions are objects, typeof operator treats
+it differently, it is also another relic from the past.
+
+typeof x is the same with typeof(x).
+
+typeof is an operator and not a function so technically
+it shouldn't need the parentheses, the parentheses are
+actually used to mathematically group the mathematical
+expressions like (2+2) into 1 thing to be operated on 
+by the typeof operator.

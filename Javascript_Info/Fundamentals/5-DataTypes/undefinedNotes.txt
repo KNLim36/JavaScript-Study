@@ -1,0 +1,17 @@
+The "undefined" value has its own type just like "null"
+
+When a variable is declared but not assigned it gets an "undefined"
+
+let age;
+alert(age) // shows "undefined"
+
+Normally we use "null" to represent a value that means nothing.
+"undefined" is used to represent the fact that a variable has
+not been declared.
+
+let accountingSkills = null;
+// Means I don't have accounting skills
+
+let moneyInWallet = 100; 
+moneyInWallet = undefined;
+// This represents me losing my wallet

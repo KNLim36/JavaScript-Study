@@ -1,0 +1,12 @@
+The special value "null" doesn't belong to any other types.
+
+It is a separate type on its own which contains the "null" value.
+
+It is not a
+- reference to a non-existing object
+- null pointer
+
+It is just a special value that represents
+- nothing
+- empty
+- value unknown
