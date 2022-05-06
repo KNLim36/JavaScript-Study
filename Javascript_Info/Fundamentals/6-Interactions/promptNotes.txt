@@ -1,0 +1,9 @@
+prompt()
+- Asks the user to input something and press okay.
+- We get the results in the returned value like this:
+    result = prompt(title, [default]);
+- Accepts 2 arguments:
+    - title: the text to display to the user.
+    - default: the initial value for the input field.
+- Users are allowed to press "Cancel" or hit the "Esc" key to quit.
+The result returned will be "null"

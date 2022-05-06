@@ -1,0 +1,6 @@
+alert()
+- Shows a message and waits for the user to press "OK"
+- It takes in 1 string argument to be displayed.
+- It displays a "modal" window that disallows the users
+from interacting with the rest of the page unless they
+have dealt with the window.
