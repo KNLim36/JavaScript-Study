@@ -6,4 +6,8 @@ prompt()
     - title: the text to display to the user.
     - default: the initial value for the input field.
 - Users are allowed to press "Cancel" or hit the "Esc" key to quit.
-The result returned will be "null"
+- The result returned will be "null" if the user canceled or quit.
+
+In IE: always supply a default value!
+- Even though the second parameter is optional, if we don't supply it,
+IE insert the text "undefined" into the prompt.

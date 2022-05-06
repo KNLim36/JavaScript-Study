@@ -1,0 +1,5 @@
+confirm()
+- Shows a modal window with a question and 2 buttons, "OK" or "Cancel".
+
+result = confirm(question);
+- The result will be true or false based on the user selection.
