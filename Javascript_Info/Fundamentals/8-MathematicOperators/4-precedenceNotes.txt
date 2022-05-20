@@ -1,0 +1,37 @@
+An operator with a higher precedence (priority) will be executed first.
+
+Parentheses override precedence.
+
+Unary operators have a higher precedence than binary operators.
+
+================================================================================================
+The equal sign (=) is also an operator, it has a very low precedence of 2.
+The = operator returns a value, because all operators return a value.
+The call x = value writes the value into x and then returns it.
+
+    let a = 1;
+    let b = 2;
+
+    let c = 3 - (a = b + 1);
+
+    alert( a ); // 3
+    alert( c ); // 0
+
+(a = b + 1) means first b(2) + 1, then the value 3 is written into "a".
+Now the expression becomes let c = 3 - a(3); "c" becomes 0.
+
+Chaining assignments are possible too:
+    let a, b, c;
+
+    a = b = c = 2 + 2;
+
+    alert( a ); // 4
+    alert( b ); // 4
+    alert( c ); // 4
+
+Modify-in-place:
+    let n = 2;
+    n += 5; // now n = 7 (same as n = n + 5)
+    n *= 2; // now n = 14 (same as n = n * 2)
+
+    alert( n ); // 14

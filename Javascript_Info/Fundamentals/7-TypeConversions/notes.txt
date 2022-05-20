@@ -1,0 +1,21 @@
+String(value) converts a value to a string.
+
+================================================================================================
+Number(str) converts a value to a number.
+When division is applied to non-numbers, JavaScript converts the non-numbers to numbers for us.
+alert( "6" / "2" ); // 3, strings are converted to numbers
+
+If Number(str) fails, we will get a NaN.
+
+Number(true); // 1
+Number(false); // 0
+Number(null); // 0
+Number(undefined); // NaN
+
+================================================================================================
+Boolean(value) converts a value to a boolean.
+0, empty string, null, undefined and NaN are all converted to false.
+
+Special cases:
+- Boolean("0"); // true because the string is not empty.
+- Boolean(" "); // true because space is also not considered empty.

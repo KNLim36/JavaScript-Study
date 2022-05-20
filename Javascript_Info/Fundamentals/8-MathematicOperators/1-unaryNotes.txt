@@ -1,0 +1,23 @@
+First we have to understand operator and operand.
+
+Operator operates on operands.
+
+For example, a simple mathematical expression: 5 + 2 has 2 operands (5 and 2) and a operator (+).
+
+The term "Unary" means singular, one.
+
+And so, unary operator means an operator that operates on 1 operand only.
+
+These unary operators are available in JavaScript:
+- Unary plus (+)        Attempts to convert operand to a number if it is not a number.
+- Unary negation (-)    Attempts to convert operand to a number, then negates it.
+- Increment (++)        Adds one to its operand.
+- Decrement (--)        Minus one from its operand.
+- Logical NOT (!)       Converts to boolean then negates it.
+- Bitwise NOT (~)       Invert all the bits in the operand then returns a number.
+- typeof                Returns a string which is the type of the operand.
+- delete                Deletes specific index of an array or specific property of an object.
+- void                  Discards a return value of an expression. (Result is undefined.)
+
+Reference: https://www.digitalocean.com/community/tutorials/javascript-unary-operators-simple-and-useful
+
